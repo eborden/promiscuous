@@ -1,7 +1,9 @@
 # Promiscuous
 ### Don't Marry Your Promises
 
-Promiscuous is a promise agnostic tool belt for Promises/A+. Promiscuous allows you to decouple your tools from your implementation.
+Promiscuous is a promise agnostic tool belt for Promises/A+. Promiscuous allows you to decouple your tools from your implementation. Become part of the free promises movement.
+
+- Peace, Love and JavaScript
 
 ## Why
 Promises/A+ allows varied promise implementations to interact with each other. When.js may accept Q promises or any other complying implementation. This frees developers from worrying about what promise implementation their modules employ. However, many promise implementations provide additional tools for coordinating and working with promises. By using these tools we create deep dependencies on our promise implementation, essentially marrying our promises.
