@@ -175,9 +175,10 @@ function test (name) {
             prom.all([
                 pSync(1, 2),
                 pSync(2, 6),
-                pSync(3, 3)
+                pSync(3, 3),
+                4
             ]).then(function (data) {
-                expect(data).toEqual([[1], [2], [3]]);
+                expect(data).toEqual([[1], [2], [3], [4]]);
                 done();
             }, asyncError(done));
         });
