@@ -113,7 +113,7 @@ promiseModule = promiscuous.bindModule(
 ```
 
 ###promiscuous.map
-([promise, ...])
+(function, [promise, ...])
 
 Similar to Array.prototype.map, map a function over a collection of promises or values. A single promise is returned containing an array of the resulting promises or values.
 
