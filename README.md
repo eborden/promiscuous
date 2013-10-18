@@ -33,6 +33,7 @@ For more configuration options check out [config's api](#promiscuousconfig).
 - [config](#promiscuousconfig)
 - [bind](#promiscuousbind)
 - [bindModule](#promiscuousbindmodule)
+- [map](#promiscuousmap)
 - [all](#promiscuousall)
 - [any](#promiscuousany)
 - [join](#promiscuousjoin)
@@ -109,6 +110,27 @@ promiseModule = promiscuous.bindModule(
 		name: 'method4',
 		style: 'duality'
 	});
+```
+
+###promiscuous.map
+([promise, ...])
+
+Similar to Array.prototype.map, map a function over a collection of promises or values. A single promise is returned containing an array of the resulting promises or values.
+
+```
+function add2 (x) {
+    return x + 2;
+}
+
+promiscuous.map(add2, [
+	func1(),
+	func2(),
+	func3()
+]).then(function (data) {
+	data[0]; //add2(func1) results
+	data[1]; //add2(func2) results
+	data[2]; //add2(func3) results
+});
 ```
 
 ###promiscuous.all
