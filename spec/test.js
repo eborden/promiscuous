@@ -260,6 +260,37 @@ function test (name) {
     });
 
 
+    describe("Map", function() {
+        
+        it("Returns thenable", function() {
+            expect(typeof prom.map(_, [prom(_)]).then).toBe('function');
+        });
+        it("Passes correct fulfill data", function (done) {
+            prom.map(function (x) {
+                return x * 3;
+            }, [
+                pSync(1, 2),
+                pSync(2, 6),
+                pSync(3, 3),
+                4
+            ]).then(function (data) {
+                expect(data).toEqual([[3], [6], [9], [12]]);
+                done();
+            }, asyncError(done));
+        });
+        it("Passes correct reject value", function (done) {
+            prom.map(_, [
+                pSync(1, 1),
+                pSync(2, 4),
+                pSync('error', 2, true)
+            ]).then(asyncError(done), function (msg) {
+                expect(msg).toBe('error');
+                done();
+            });
+        });
+    });
+
+
     describe('Sequence', function () {
         
         it("Returns thenable", function() {
