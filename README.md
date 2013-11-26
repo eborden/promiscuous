@@ -229,6 +229,18 @@ promiscuous.timeout(200, func())
     });
 ```
 
+###promiscuous.delay
+(milliseconds, function)
+
+Delay a function's execution time.
+
+```
+promiscuous.delay(200, func)
+    .then(function (data) {
+    	console.log(data); //logs after 200ms
+    });
+```
+
 ###promiscuous.forever
 (function, ...args)
 

@@ -393,6 +393,41 @@ function test (name) {
         });
     });
 
+    describe("Delay", function() {
+        
+        it("Returns thenable", function() {
+            expect(typeof prom.delay(100, prom(_)).then).toBe('function');
+        });
+        it("Passes correct fulfill data", function (done) {
+            prom.delay(10, function () {
+                return 1;
+            }).then(function (data) {
+                expect(data).toBe(1);
+                done();
+            }, asyncError(done));
+        });
+        it("Passes correct reject value", function (done) {
+            prom.delay(10, function () {
+                throw new Error('error');
+            }).then(asyncError(done), function (msg) {
+                expect(msg).toBe('error');
+                done();
+            });
+        });
+        it("Displays a visible delay in execution", function (done) {
+            var delayed = false;
+            setTimeout(9, function () {
+                delayed = true;
+            })
+            prom.timeout(10, function () {
+                return 1;
+            }).then(function (msg) {
+                expect(delayed).toBe(true);
+                done();
+            }, asyncError(done));
+        });
+    });
+
 
     describe("Timeout", function() {
         
