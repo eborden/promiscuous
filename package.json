@@ -1,6 +1,6 @@
 {
   "name": "promiscuous-tool",
-  "version": "0.2.2",
+  "version": "0.3",
   "description": "Promise agnostic tool belt for Promises/A+",
   "author": "Evan Rutledge Borden <evan@evan-borden.com>",
   "license": "MIT",

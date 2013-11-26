@@ -1,0 +1,163 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.18
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/eborden/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+12 verbose folder .
+13 silly lockFile 1f1177db-tar tar://.
+14 verbose lock tar://. /home/eborden/.npm/1f1177db-tar.lock
+15 silly lockFile 0a9c8ccc-9999-0-40819659223780036-tmp-tgz tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+16 verbose lock tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz /home/eborden/.npm/0a9c8ccc-9999-0-40819659223780036-tmp-tgz.lock
+17 silly lockFile 1f1177db-tar tar://.
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 0a9c8ccc-9999-0-40819659223780036-tmp-tgz tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+20 silly lockFile 0a9c8ccc-9999-0-40819659223780036-tmp-tgz tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+21 verbose tar unpack /home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+22 silly lockFile 60e6d8d9-9999-0-40819659223780036-package tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package
+23 verbose lock tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package /home/eborden/.npm/60e6d8d9-9999-0-40819659223780036-package.lock
+24 silly lockFile 0a9c8ccc-9999-0-40819659223780036-tmp-tgz tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+25 verbose lock tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz /home/eborden/.npm/0a9c8ccc-9999-0-40819659223780036-tmp-tgz.lock
+26 silly gunzTarPerm modes [ '755', '644' ]
+27 silly gunzTarPerm extractEntry package.json
+28 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+31 silly gunzTarPerm extractEntry README.md
+32 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+33 silly gunzTarPerm extractEntry lib/promiscuous.js
+34 silly gunzTarPerm modified mode [ 'lib/promiscuous.js', 436, 420 ]
+35 silly gunzTarPerm extractEntry runspecs.sh
+36 silly gunzTarPerm modified mode [ 'runspecs.sh', 509, 493 ]
+37 silly gunzTarPerm extractEntry spec/configs.js
+38 silly gunzTarPerm modified mode [ 'spec/configs.js', 436, 420 ]
+39 silly gunzTarPerm extractEntry spec/laissez.spec.js
+40 silly gunzTarPerm modified mode [ 'spec/laissez.spec.js', 436, 420 ]
+41 silly gunzTarPerm extractEntry spec/node.spec.js
+42 silly gunzTarPerm modified mode [ 'spec/node.spec.js', 436, 420 ]
+43 silly gunzTarPerm extractEntry spec/q.spec.js
+44 silly gunzTarPerm modified mode [ 'spec/q.spec.js', 436, 420 ]
+45 silly gunzTarPerm extractEntry spec/rsvp.spec.js
+46 silly gunzTarPerm modified mode [ 'spec/rsvp.spec.js', 436, 420 ]
+47 silly gunzTarPerm extractEntry spec/test.js
+48 silly gunzTarPerm modified mode [ 'spec/test.js', 436, 420 ]
+49 silly gunzTarPerm extractEntry spec/vow.spec.js
+50 silly gunzTarPerm modified mode [ 'spec/vow.spec.js', 436, 420 ]
+51 silly gunzTarPerm extractEntry spec/when.spec.js
+52 silly gunzTarPerm modified mode [ 'spec/when.spec.js', 436, 420 ]
+53 silly lockFile 60e6d8d9-9999-0-40819659223780036-package tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package
+54 silly lockFile 60e6d8d9-9999-0-40819659223780036-package tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package
+55 silly lockFile 0a9c8ccc-9999-0-40819659223780036-tmp-tgz tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+56 silly lockFile 0a9c8ccc-9999-0-40819659223780036-tmp-tgz tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/tmp.tgz
+57 verbose tar pack [ '/home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz',
+57 verbose tar pack   '/home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package' ]
+58 verbose tarball /home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+59 verbose folder /home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package
+60 silly lockFile 60e6d8d9-9999-0-40819659223780036-package tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package
+61 verbose lock tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package /home/eborden/.npm/60e6d8d9-9999-0-40819659223780036-package.lock
+62 silly lockFile 4e0512d6-omiscuous-tool-0-2-2-package-tgz tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+63 verbose lock tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz /home/eborden/.npm/4e0512d6-omiscuous-tool-0-2-2-package-tgz.lock
+64 silly lockFile 60e6d8d9-9999-0-40819659223780036-package tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package
+65 silly lockFile 60e6d8d9-9999-0-40819659223780036-package tar:///home/eborden/tmp/npm-15865-sP1u_3xa/1385487749999-0.40819659223780036/package
+66 silly lockFile 4e0512d6-omiscuous-tool-0-2-2-package-tgz tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+67 silly lockFile 4e0512d6-omiscuous-tool-0-2-2-package-tgz tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+68 silly lockFile 591dd952-m-promiscuous-tool-0-2-2-package /home/eborden/.npm/promiscuous-tool/0.2.2/package
+69 verbose lock /home/eborden/.npm/promiscuous-tool/0.2.2/package /home/eborden/.npm/591dd952-m-promiscuous-tool-0-2-2-package.lock
+70 silly lockFile 591dd952-m-promiscuous-tool-0-2-2-package /home/eborden/.npm/promiscuous-tool/0.2.2/package
+71 silly lockFile 591dd952-m-promiscuous-tool-0-2-2-package /home/eborden/.npm/promiscuous-tool/0.2.2/package
+72 verbose tar unpack /home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+73 silly lockFile 6772a75e-m-promiscuous-tool-0-2-2-package tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package
+74 verbose lock tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package /home/eborden/.npm/6772a75e-m-promiscuous-tool-0-2-2-package.lock
+75 silly lockFile 4e0512d6-omiscuous-tool-0-2-2-package-tgz tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+76 verbose lock tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz /home/eborden/.npm/4e0512d6-omiscuous-tool-0-2-2-package-tgz.lock
+77 silly gunzTarPerm modes [ '755', '644' ]
+78 silly gunzTarPerm extractEntry package.json
+79 silly gunzTarPerm extractEntry .npmignore
+80 silly gunzTarPerm extractEntry README.md
+81 silly gunzTarPerm extractEntry lib/promiscuous.js
+82 silly gunzTarPerm extractEntry runspecs.sh
+83 silly gunzTarPerm extractEntry spec/configs.js
+84 silly gunzTarPerm extractEntry spec/laissez.spec.js
+85 silly gunzTarPerm extractEntry spec/node.spec.js
+86 silly gunzTarPerm extractEntry spec/q.spec.js
+87 silly gunzTarPerm extractEntry spec/rsvp.spec.js
+88 silly gunzTarPerm extractEntry spec/test.js
+89 silly gunzTarPerm extractEntry spec/vow.spec.js
+90 silly gunzTarPerm extractEntry spec/when.spec.js
+91 silly lockFile 6772a75e-m-promiscuous-tool-0-2-2-package tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package
+92 silly lockFile 6772a75e-m-promiscuous-tool-0-2-2-package tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package
+93 silly lockFile 4e0512d6-omiscuous-tool-0-2-2-package-tgz tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+94 silly lockFile 4e0512d6-omiscuous-tool-0-2-2-package-tgz tar:///home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz
+95 verbose chmod /home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz 644
+96 verbose chown /home/eborden/.npm/promiscuous-tool/0.2.2/package.tgz [ 1000, 1000 ]
+97 silly lockFile 3a52ce78- .
+98 silly lockFile 3a52ce78- .
+99 silly publish { name: 'promiscuous-tool',
+99 silly publish   version: '0.2.2',
+99 silly publish   description: 'Promise agnostic tool belt for Promises/A+',
+99 silly publish   author: { name: 'Evan Rutledge Borden', email: 'evan@evan-borden.com' },
+99 silly publish   license: 'MIT',
+99 silly publish   repository:
+99 silly publish    { type: 'git',
+99 silly publish      url: 'https://github.com/eborden/promiscuous.git' },
+99 silly publish   bugs: { url: 'https://github.com/eborden/promiscuous/issues' },
+99 silly publish   main: 'lib/promiscuous.js',
+99 silly publish   devDependencies:
+99 silly publish    { 'jasmine-node': '*',
+99 silly publish      q: '*',
+99 silly publish      rsvp: '*',
+99 silly publish      'node-promise': '*',
+99 silly publish      'laissez-faire': '*',
+99 silly publish      vow: '*',
+99 silly publish      deferred: '*',
+99 silly publish      when: '*' },
+99 silly publish   readme: '# Promiscuous\n### Don\'t Marry Your Promises\n\nPromiscuous is a promise agnostic tool belt for Promises/A+. Promiscuous allows you to decouple your tools from your implementation. Become part of the free promises movement.\n\n-Peace, Love and JavaScript\n\n[View on NPM](https://npmjs.org/package/promiscuous-tool)\n\n## Why\nPromises/A+ allows varied promise implementations to interact with each other. When.js may accept Q promises or any other complying implementation. This frees developers from worrying about what promise implementation their modules employ. However, many promise implementations provide additional tools for coordinating and working with promises. By using these tools we create deep dependencies on our promise implementation, essentially marrying our promises.\n\nWhy shouldn\'t we marry our promises? The fastest promise implementation today could be the slowest implementation tomorrow. If you marry your implementation you are stuck with it. Changing from promise implementation A to promise implementation B will incur timely expensive refactoring. Promiscuous shields you from this dangerous situation.\n\n##Using Promiscuous\n\nSimply include promiscuous in your bootstrap file. Configure it with your promise implementation and enjoy.\n\n```\npromiscuous.config({\n    promise: function (resolver) {\n        var deferred = Q.defer();\n        resolver(deferred.fulfill, deferred.reject);\n        return deferred.promise;\n    }\n});\n```\n\nFor more configuration options check out [config\'s api](#promiscuousconfig).\n\n## API\n\n- [config](#promiscuousconfig)\n- [bind](#promiscuousbind)\n- [bindModule](#promiscuousbindmodule)\n- [map](#promiscuousmap)\n- [all](#promiscuousall)\n- [any](#promiscuousany)\n- [join](#promiscuousjoin)\n- [pipeline](#promiscuouspipeline)\n- [sequence](#promiscuoussequence)\n- [timeout](#promiscuoustimeout)\n- [forever](#promiscuousforever)\n- [foreverPipe](#promiscuousforeverpipe)\n\n### promiscuous.config\nPromiscuous does require you to use a Promises/A+ implementation, however you can change it any time. Additionally you may define callback styles to be used with bind. Promiscuous comes pre loaded with "node" and "duality" style callbacks.\n\n```\npromiscuous.config({\n    promise: function (resolver) {\n        var deferred = Q.defer();\n        resolver(deferred.fulfill, deferred.reject);\n        return deferred.promise;\n    },\n    styles: {\n        inverseNode: function (fulfill, reject) {\n            return function (value, err) {\n                if (err) {\n                    reject(err);\n                } else {\n                    fulfill(value);\n                }\n            }\n        },\n        inverseDuality:  function (fulfill, reject) {\n            return [\n                function () {\n                    reject.apply(null, arguments);\n                },\n                function () {\n                    fulfill.apply(null, arguments);\n                }\n            ];\n        },\n    }\n});\n```\n\nMore example promise configurations can be found [here](/spec/configs.js).\n\n###promiscuous.bind\n(function, length, style)\n\nBind converts continuation passing style functions into functions that return promises. This is very helpful for converting node functions.\n\n```JavaScript\nfunction nodeLike (foo, bar, callback) {\n    //...\n\tcallback(err, data);\n}\n\npromiscuous.bind(nodeLike);\npromiscuous.bind(nodeLike, 3);\npromiscuous.bind(nodeLike, 3, \'node\');\n```\n\n###promiscuous.bindModule\n(module, method, ...)\n\nConvert entire modules into promise returning modules.\n\n```JavaScript\npromiseModule = promiscuous.bindModule(\n\tnodeLikeModule,\n\t\'method1\',\n\t[\'method2\', 3],\n\t[\'method3\', 3, \'node\'],\n\t{\n\t\tname: \'method4\',\n\t\tstyle: \'duality\'\n\t});\n```\n\n###promiscuous.map\n(function, [promise, ...])\n\nSimilar to Array.prototype.map, map a function over a collection of promises or values. A single promise is returned containing an array of the resulting promises or values.\n\n```\nfunction add2 (x) {\n    return x + 2;\n}\n\npromiscuous.map(add2, [\n\tfunc1(),\n\tfunc2(),\n\tfunc3()\n]).then(function (data) {\n\tdata[0]; //add2(func1) results\n\tdata[1]; //add2(func2) results\n\tdata[2]; //add2(func3) results\n});\n```\n\n###promiscuous.all\n([promise, ...])\n\nReturn a promise that is fulfilled when all promises in the passed array are fulfilled. Returned values are passed as an array on completion.\n\n```\npromiscuous.all([\n\tfunc1(),\n\tfunc2(),\n\tfunc3()\n]).then(function (data) {\n\tdata[0]; //func1 results\n\tdata[1]; //func2 results\n\tdata[2]; //func3 results\n});\n```\n\n###promiscuous.any\n([promise, ...])\n\nReturn a promise that is fulfilled when any of the promises in passed array is fulfilled\n\n```\npromiscuous.any([\n\tfunc1(), \n\tfunc2(), //fails\n\tfunc3() //fulfills first\n]).then(function (data) {\n\tdata; //func3 results\n});\n```\n\n###promiscuous.join\n(promise, ...)\n\nReturn a promise that is fulfilled when all promises passed are fulfilled. Returned values are passed as an array on completion.\n\n```\npromiscuous.join(\n\tfunc1(),\n\tfunc2(),\n\tfunc3()\n).then(function (data) {\n\tdata[0]; //func1 results\n\tdata[1]; //func2 results\n\tdata[2]; //func3 results\n});\n```\n\n###promiscuous.pipeline\n([function, ...], arguments, ...)\n\nInvoke functions so their results feed in to each other. The result of the final function is returned.\n\n```\npromiscuous.pipeline([\n\tfunc1, //invoked with \'foo\'\n\tfunc2, //invoked with the result of func1\n\tfunc3 //invoked with the result of func2\n], \'foo\').then(function (data) {\n\tdata; //func3 results\n});\n```\n\n###promiscuous.sequence\n([function, ...], arguments, ...)\n\nInvoke all functions with the provided arguments. Each function fires after completion of the last. All values are returned as an array on  fullfillment of the last promise.\n\n```\npromiscuous.sequence([\n\tfunc1, \n\tfunc2,\n\tfunc3\n], \'foo\', \'bar\').then(function (data) {\n\tdata[0]; //func1 results\n\tdata[1]; //func2 results\n\tdata[2]; //func3 results\n});\n```\n\n###promiscuous.timeout\n(milliseconds, promise)\n\nReject a promise if it does not return within a specified time period.\n\n```\npromiscuous.timeout(200, func())\n    .then(function (data) {\n    \tconsole.log(data);\n    }, function (err) {\n    \t//logs error if func does not complete within 200ms\n    \tconsole.log(err);\n    });\n```\n\n###promiscuous.delay\n(milliseconds, function)\n\nDelay a function\'s execution time.\n\n```\npromiscuous.delay(200, func)\n    .then(function (data) {\n    \tconsole.log(data); //logs after 200ms\n    });\n```\n\n###promiscuous.forever\n(function, ...args)\n\nRun a function sequentially until it rejects.\n\n```\npromiscuous.forever(func, arg1, arg2)\n    .then(null, function (err) {\n        //it died\n    });\n```\n\n###promiscuous.foreverPipe\n(function, ...args)\n\nRun a function sequentially until it rejects. Output from the previous run is piped to the next.\n\n```\npromiscuous.forever(func, arg1)\n    .then(null, function (err) {\n        //it died\n    });\n```\n',
+99 silly publish   readmeFilename: 'README.md',
+99 silly publish   _id: 'promiscuous-tool@0.2.2',
+99 silly publish   dist: { shasum: '1e4fc7ceb71f5e1c93b607874fa6c94da64c2950' },
+99 silly publish   _from: '.' }
+100 verbose url raw promiscuous-tool
+101 verbose url resolving [ 'https://registry.npmjs.org/', './promiscuous-tool' ]
+102 verbose url resolved https://registry.npmjs.org/promiscuous-tool
+103 info trying registry request attempt 1 at 12:42:31
+104 http PUT https://registry.npmjs.org/promiscuous-tool
+105 http 409 https://registry.npmjs.org/promiscuous-tool
+106 verbose url raw promiscuous-tool
+107 verbose url resolving [ 'https://registry.npmjs.org/', './promiscuous-tool' ]
+108 verbose url resolved https://registry.npmjs.org/promiscuous-tool
+109 info trying registry request attempt 1 at 12:42:31
+110 http GET https://registry.npmjs.org/promiscuous-tool
+111 http 200 https://registry.npmjs.org/promiscuous-tool
+112 error publish fail Cannot publish over existing version.
+112 error publish fail Update the 'version' field in package.json and try again.
+112 error publish fail
+112 error publish fail If the previous version was published in error, see:
+112 error publish fail     npm help unpublish
+112 error publish fail
+112 error publish fail To automatically increment version numbers, see:
+112 error publish fail     npm help version
+113 error System Linux 3.2.0-56-generic
+114 error command "node" "/usr/local/bin/npm" "publish"
+115 error cwd /home/eborden/promiscuous
+116 error node -v v0.10.18
+117 error npm -v 1.3.11
+118 error code EPUBLISHCONFLICT
+119 verbose exit [ 1, true ]
