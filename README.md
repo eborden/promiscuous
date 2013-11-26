@@ -40,6 +40,7 @@ For more configuration options check out [config's api](#promiscuousconfig).
 - [pipeline](#promiscuouspipeline)
 - [sequence](#promiscuoussequence)
 - [timeout](#promiscuoustimeout)
+- [delay](#promiscuousdelay)
 - [forever](#promiscuousforever)
 - [foreverPipe](#promiscuousforeverpipe)
 
