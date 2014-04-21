@@ -41,9 +41,9 @@ module.exports = {
     //Vow https://github.com/dfilatov/jspromise
     vow: {
         promise: function (resolver) {
-            var promise = vow.promise();
-            resolver(promise.fulfill.bind(promise), promise.reject.bind(promise));
-            return promise;
+            return new vow.Promise(function (fulfill, reject) {
+                resolver(fulfill, reject);
+            });
         }
     },
     //laissez-faire https://github.com/jkroso/Laissez-faire

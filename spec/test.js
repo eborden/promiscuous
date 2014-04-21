@@ -11,9 +11,8 @@ function test (name) {
     var _ = function () {},
         asyncError = function (done) {
             return function () {
-                done();
-                throw new Error(done.message);
                 expect(true).toBe(false);
+                done();
             }
         },
         pSync = function (val, time, fail) {
@@ -242,10 +241,10 @@ function test (name) {
                 pSync(1, 50),
                 pSync(2, 10),
                 pSync('error', 2, true)
-            ]).then(asyncError(done), function (data) {
+            ]).then(function (data) {
                 expect(data).toBe(2);
                 done();
-            });
+            }, asyncError(done));
         });
         it("Passes correct reject value", function (done) {
             prom.any([
@@ -416,10 +415,10 @@ function test (name) {
         });
         it("Displays a visible delay in execution", function (done) {
             var delayed = false;
-            setTimeout(9, function () {
+            setTimeout(function () {
                 delayed = true;
-            })
-            prom.timeout(10, function () {
+            }, 9);
+            prom.delay(12, function () {
                 return 1;
             }).then(function (msg) {
                 expect(delayed).toBe(true);
@@ -453,6 +452,51 @@ function test (name) {
                     expect(msg).toBe('Timed Out.');
                     done();
                 });
+        });
+    });
+
+
+    describe("Attempt", function() {
+        
+        it("Returns thenable", function() {
+            expect(typeof prom.attempt(100, prom(_)).then).toBe('function');
+        });
+        it("Passes correct fulfill data", function (done) {
+            prom.attempt(10, pSync.bind(null, 1, 2)).then(function (data) {
+                expect(data).toBe(1);
+                done();
+            }, asyncError(done));
+        });
+        it("Passes correct reject value", function (done) {
+            prom.attempt(0, pSync.bind(null, 'error', 2, true))
+                .then(asyncError(done), function (msg) {
+                    expect(msg).toBe('Max attempts reached.');
+                    done();
+                });
+        });
+        it("Rejects when maximum attempts have been tried", function (done) {
+            var fail = pSync.bind(null, 'error', 1, true),
+                attempts = [fail, fail, fail, fail],
+                failAfterFour = function () {
+                    return attempts.shift().call();
+                };
+            prom.attempt(3, failAfterFour)
+                .then(asyncError(done), function (msg) {
+                    expect(msg).toBe('Max attempts reached.');
+                    done();
+                });
+        });
+        it("Returns correct value after a few tries", function (done) {
+            var fail = pSync.bind(null, 'error', 1, true),
+                attempts = [fail, fail, fail, pSync.bind(null, 'foo', 2)],
+                successAfterThree = function () {
+                    return attempts.shift().call();
+                };
+            prom.attempt(4, successAfterThree)
+                .then(function (msg) {
+                    expect(msg).toBe('foo');
+                    done();
+                }, asyncError(done));
         });
     });
 
